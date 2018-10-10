@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `trackings` (
+  `tracking_id` int(6) NOT NULL AUTO_INCREMENT,
+  `order_id` int(6) NOT NULL,
+  `tracking_no` varchar(100) NOT NULL,
+  `last_update_date` datetime DEFAULT NULL,
+  `last_update_info` text,
+  `last_track_data` datetime NOT NULL,
+  `last_error` text,
+  `was_delivered` int(1) NOT NULL DEFAULT '0',
+  `delivery_date` date DEFAULT NULL,
+  `icon_class` varchar(100) NOT NULL,
+  `company_id` int(6) NOT NULL,
+  `mail_notify` tinyint(1) NOT NULL DEFAULT '1',
+  `mail_copy` varchar(500) DEFAULT NULL,
+  `position` int(3) NOT NULL DEFAULT '0',
+  `active` tinyint(1) NOT NULL DEFAULT '1',
+  `created_date` datetime NOT NULL,
+  `created_by` varchar(100) NOT NULL,
+  PRIMARY KEY (`tracking_id`),
+  KEY `company_id` (`company_id`),
+  KEY `created_by` (`created_by`),
+  KEY `order_id` (`order_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;

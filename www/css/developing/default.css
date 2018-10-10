@@ -1,0 +1,383 @@
+* {
+    font-family: Verdana, Arial;
+    font-size: 12px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0px;
+    padding: 10px;
+}
+
+.container input,
+.container select {
+    padding: 5px;
+}
+
+span.mandatory {
+    color: red;
+    font-weight: bold;
+}
+
+/*
+ * ===============================================
+ */
+
+.boxLogonAdSense {
+    width: 730px;
+    border: none;
+    padding: 10px;
+    margin: 0px auto;
+    left: -365px;
+}
+
+.boxLogon {
+    width: 420px;
+    border: none;
+    padding: 10px;
+    margin: 40px auto;
+    left: -150px;
+}
+.boxLogon .top {
+    width: 420px;
+    height: 165px;
+    padding: 0;
+    margin: 0;
+    background: url("../images/BoxLogonTop.jpg");
+}
+.boxLogon .middle {
+    width: 420px;
+    padding: 20px 0 0 0;
+    margin: 0;
+    background: url("../images/BoxLogonMiddle.jpg") repeat-y;
+}
+.boxLogon .bottom {
+    width: 420px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    background: url("../images/BoxLogonBottom.jpg");
+}
+.boxLogon .middle > div {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 3px;
+}
+
+.boxLogon .middle .left {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.boxLogon .middle .right {
+    display: inline-block;
+    width: 315px;
+    text-align: left;
+}
+
+.boxLogon input {
+    width: 245px;
+    padding: 5px;
+    font-size: 14px;
+}
+.boxLogon button {
+    padding: 5px 15px;
+    font-size: 14px;
+}
+.boxLogon .error {
+    color: red;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+/*
+ * ===============================================
+ */
+
+.homeShopOrderList tbody a, 
+.homeShopOrderList tbody a:visited {
+    text-decoration: none;
+    color: #E38E1C;
+}
+.homeShopOrderList tbody a:hover {
+    text-decoration: underline;
+}
+
+/*
+ * ===============================================
+ */
+
+.TopBanner {
+    position: relative;
+    width: 100%;
+    height: 235px;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.TopBanner .left {
+    position: absolute;
+    top: 0px;
+    left : 0px;
+    width: 300px;
+    height: 235px;
+    z-index: 0;
+}
+.TopBanner .middle {
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    right: 50px;
+    height: 235px;
+    z-index: 0;
+    background: url(../images/TopBannerMiddle.jpg) repeat-x;
+}
+.TopBanner .right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 235px;
+    z-index: 0;
+    background: url(../images/TopBannerRight.jpg);
+}
+
+.TopBanner .left.type1 {
+    background: url(../images/TopBannerLeft1.jpg);
+}
+.TopBanner .left.type2 {
+    background: url(../images/TopBannerLeft2.jpg);
+}
+.TopBanner .left.type3 {
+    background: url(../images/TopBannerLeft3.jpg);
+}
+.TopBanner .left.type4 {
+    background: url(../images/TopBannerLeft4.jpg);
+}
+.TopBanner .left.type5 {
+    background: url(../images/TopBannerLeft5.jpg);
+}
+.TopBanner .left.type6 {
+    background: url(../images/TopBannerLeft6.jpg);
+}
+
+.TopBanner .toolset {
+    position:absolute;
+    display: block;
+    clear: both;
+    top: 144px;
+    left: 36px;
+    right: 24px;
+    padding: 7px;
+    z-index: 1;
+}
+.TopBanner .toolset > div {
+    display: inline-block
+}
+.TopBanner .toolset .projetoAtivo a {
+    background-color: yellow;
+    padding: 4px 10px 4px 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.TopBanner .toolset .botoes {
+    padding: 8px 10px 8px 0px;
+    margin: 0 10px;
+}
+.TopBanner .toolset .user {
+    margin: 0 10px;
+    color: #fff;
+    padding: 3px 10px 3px 10px;
+}
+.TopBanner .toolset .logoff {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    padding: 3px 10px 3px 10px;
+}
+
+.TopBanner .toolset a {
+    padding: 4px 10px 4px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+.TopBanner .toolset a.activated,
+.TopBanner .toolset a:hover {
+    background-color: #6B5245;
+}
+.TopBanner .toolset a:visited {
+    color: #fff;
+}
+
+.TopBanner .title {
+    position: absolute;
+    top: 75px;
+    left : 280px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+.TopBanner .title h3 {
+    font-size: 26px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic
+}
+
+/*
+ * ===============================================
+ */
+
+table.homeShopOrderList {
+    width: 80%;
+    margin: 0 0 30px 0;
+}
+
+table.homeShopOrderList td {
+    padding: 7px;
+}
+
+table.homeShopOrderList tr.shop > td {
+    border-bottom: solid 1px black;
+}
+
+table.homeShopOrderList td.shop {
+    padding: 20px 0 18px 10px;
+    font-size: 14px;
+}
+
+table.homeShopOrderList tr.order > td.order {
+    width: 250px;
+}
+
+table.homeShopOrderList tr.order > td {
+    border-bottom: dashed 1px gray;
+}
+
+table.homeShopOrderList td.buttons {
+    width: 80px;
+    padding: 20px 7px 7px 7px;
+}
+
+table.homeShopOrderList td.buttons > span.ui-icon {
+    border: solid 1px black;
+    display: inline-block;
+    padding: 1px;
+}
+
+table.homeOrderTrackingList td.buttons {
+    padding: 10px 7px 7px 7px;
+}
+
+/*
+ * ===============================================
+ */
+
+table.newTracking td.buttons {
+    padding: 10px 7px 7px 7px;
+}
+
+table.newTracking input,
+table.newTracking select {
+    padding: 5px;
+}
+
+
+/*
+ * ===============================================
+ */
+
+.trackingIcon {
+    display: inline-block;
+    clear: both;
+    width: 48px;
+    height: 48px;
+    margin: 5px 0px;
+    background: url(../images/TrackingIcons48.png)
+}
+
+.trackingIcon.icon-big-conteiner {
+    background-position: 0px 0px;
+}
+.trackingIcon.icon-watch {
+    background-position: 0px -48px;
+}
+.trackingIcon.icon-fragile {
+    background-position: 0px -96px;
+}
+.trackingIcon.icon-24hours {
+    background-position: 0px -144px;
+}
+.trackingIcon.icon-ship {
+    background-position: -48px 0px;
+}
+.trackingIcon.icon-umbrella {
+    background-position: -48px -48px;
+}
+.trackingIcon.icon-list {
+    background-position: -48px -96px;
+}
+.trackingIcon.icon-up {
+    background-position: -48px -144px;
+}
+.trackingIcon.icon-small-conteiner {
+    background-position: -96px 0px;
+}
+.trackingIcon.icon-phone {
+    background-position: -96px -48px;
+}
+.trackingIcon.icon-plane {
+    background-position: -96px -96px;
+}
+.trackingIcon.icon-chair {
+    background-position: -96px -144px;
+}
+.trackingIcon.icon-globe {
+    background-position: -144px 0px;
+}
+.trackingIcon.icon-45degree-box {
+    background-position: -144px -48px;
+}
+.trackingIcon.icon-cup {
+    background-position: -144px -96px;
+}
+.trackingIcon.icon-truck {
+    background-position: -144px -144px;
+}
+.trackingIcon.icon-loud {
+    background-position: -192px 0px;
+}
+.trackingIcon.icon-gift {
+    background-position: -192px -48px;
+}
+.trackingIcon.icon-open-box {
+    background-position: -192px -96px;
+}
+.trackingIcon.icon-letter {
+    background-position: -192px -144px;
+}
+.trackingIcon.icon-support {
+    background-position: -240px 0px;
+}
+.trackingIcon.icon-shopping {
+    background-position: -240px -48px;
+}
+.trackingIcon.icon-new {
+    background-position: -240px -96px;
+}
+.trackingIcon.icon-check {
+    background-position: -240px -144px;
+}

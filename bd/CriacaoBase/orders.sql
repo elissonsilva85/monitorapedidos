@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `orders` (
+  `order_id` int(6) NOT NULL AUTO_INCREMENT,
+  `shop_id` int(6) NOT NULL,
+  `seller_id` int(6) DEFAULT NULL,
+  `order_no` varchar(100) NOT NULL,
+  `order_status` varchar(10) NOT NULL,
+  `description` text,
+  `purchase_date` date NOT NULL,
+  `delivery_date_prev` date DEFAULT NULL,
+  `delivery_date_real` date DEFAULT NULL,
+  `due_date` date DEFAULT NULL,
+  `invoice_value` float DEFAULT NULL,
+  `freight_value` float DEFAULT NULL,
+  `position` int(3) NOT NULL DEFAULT '999',
+  `created_date` datetime NOT NULL,
+  `created_by` varchar(100) NOT NULL,
+  PRIMARY KEY (`order_id`),
+  KEY `shop_id` (`shop_id`),
+  KEY `seller_id` (`seller_id`),
+  KEY `created_by` (`created_by`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
