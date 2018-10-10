@@ -1,7 +1,7 @@
 # Monitora Pedidos
 Site para monitoramento de códigos de rastreio. 
 
-www.monitorapedidos.com.br
+www.monitorapedidos.com.br [fora do ar temporariamente]
 
 Tecnicamente está preparado para monitorar qualquer tipo de código de rastreio. Basta apenas:
 1. Desenvolver a classe em `www\class\Companies`;
